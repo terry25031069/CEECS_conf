@@ -1,0 +1,74 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>{% block title %}第十九屆海峽兩岸資訊技術研討會{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='jquery-1.10.2.min.js.下載') }}"></script>
+    <script src="{{ url_for('static', filename='lightbox.js.下載') }}"></script>
+    <link href="{{ url_for('static', filename='lightbox.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div id="WRAPPER">
+        <div id="HEADER">
+            <div align="center">
+                <img src="{{ url_for('static', filename='logo_2017_5.png') }}">
+            </div>
+        </div>
+        <div id="MAIN_NAV">
+            <ul>
+                <li><a href="{{ url_for('index') }}">徵稿通知</a></li>
+                <li><a href="{{ url_for('agenda') }}">日程安排</a></li>
+                <li><a href="{{ url_for('program') }}">議程</a></li>
+                <li><a href="{{ url_for('organization') }}">組織名單</a></li>
+                <li><a href="{{ url_for('traffic') }}">交通資訊</a></li>
+            </ul>
+        </div>
+        <div id="SUB_NAV_1">
+            <ul>
+                <h3>最新消息</h3>
+                <li><h4>Nov. 20, 2017</h4><p>更新會議行程與議程</p></li>
+                <li><h4>Oct. 27, 2017</h4><p>延長截稿日期</p></li>
+                <li><h4>Oct. 16, 2017</h4><p>延長截稿日期</p></li>
+                <li><h4>Sep. 10, 2017</h4><p>網頁上線</p></li>
+            </ul>
+            <ul>
+                <h3>重要日期</h3>
+                <li>截稿日期：<strike>2017年10月1日</strike><br>
+                    <div><u style="opacity: 0;">截稿日期：</u><strike>2017年10月25日&nbsp;(Extended)</strike></div>
+                    <div style="color: red;"><u style="opacity: 0;">截稿日期：</u>2017年11月2日&nbsp;(Final extended)</div></li>
+                <li>會議時間：2017年11月28日- 30日</li>
+            </ul>
+        <ul>
+            <p align="center">
+                    <img src="{{ url_for('static', filename='CSIT_2017_s.PNG') }}" width="240px">
+            </p>
+        </ul>
+            <ul>
+                <h3>主辦單位</h3>
+                <p align="center">
+                    <a href="http://www.ncu.edu.tw/" target="_blank">
+                        <img src="{{url_for('static', filename='NCU_Logo.gif')}}" width="240" height="71">
+                    </a>
+                </p>
+
+                <h3>協辦單位</h3>
+                <p align="center">
+                    <a href="https://taai-test.herokuapp.com/" target="_blank">
+                        <img src="./taai_2x.png" width="240" height="72">
+                    </a>
+                </p>
+            </ul>
+
+        </div>
+        <div id="CONTENT">
+            {% block content %}{% endblock %}
+        </div>
+        <div id="FOOTER">
+            <p align="center">國立中央大學資訊工程學系</p>
+        </div>
+    </div>
+</body>
+</html>
