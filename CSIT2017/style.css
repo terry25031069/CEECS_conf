@@ -1,0 +1,95 @@
+@import url(//fonts.googleapis.com/earlyaccess/cwtexkai.css);
+
+/*font-family: 'cwTeXHei', sans-serif;*/
+* {margin:0;padding:0;}
+li {list-style: none}
+a {text-decoration: none}
+body,html{width: 100%}
+body {font-family: '微軟正黑體',Arial,'cwtexkai', sans-serif;}
+
+/*---- 最外層包裝 ----*/
+#WRAPPER {
+width: 1200px;
+margin:0 auto;
+background-color: white;
+background-image: url(../footage/crossword.png)
+}
+/*---- 頁首 ----*/
+#HEADER {
+background-color:#478ab6;
+}
+#HEADER img{padding: 10px 0;width: 60%;}
+#HEADER h1 a {
+text-indent: -9999px;
+display: block;
+
+height: 200px;
+background-color: antiquewhite
+}
+/*---- 主選單 ----*/
+#MAIN_NAV {box-shadow: 0 2px 2px rgba(0, 0, 0, 0.42)}
+#MAIN_NAV ul {text-align: center;background-color:#1e5b83;}
+#MAIN_NAV li {display: inline-block}
+#MAIN_NAV a{display: block;padding: 8px 40px;color: #fff;letter-spacing: 3px;}
+#MAIN_NAV a:hover {background-color: #2279b2;}
+/*---- 次選單 1 ----*/
+#SUB_NAV_1{clear: both; float:left; width:300px;padding-left: 10px}
+#SUB_NAV_1 ul {padding: 8px 10px;border-bottom: 1px solid rgba(67, 67, 67, 0.38) }
+#SUB_NAV_1 ul li{padding: 3px 0;font-size: .8rem; }
+#SUB_NAV_1 h3 {padding: 5px 20px 5px 0} 
+#SUB_NAV_1 a{ color:#6699FF;}
+#SUB_NAV_1 a:hover{ color:#FF0000;}
+#SUB_NAV_1 p,#SUB_NAV_1 h2{ text-align:left; padding:5px 10px;}
+
+/*---- 次選單 2 ----*/
+#SUB_NAV_2{ float:right; width:150px;}
+#SUB_NAV_2 a{ color:#6699FF;}
+#SUB_NAV_2 a:hover{ color:#FF0000;}
+#SUB_NAV_2 p,#SUB_NAV_2 h2{ text-align:center; padding:5px 10px;}
+
+/*---- 內容區 ----*/
+#BODY{padding-top: 0;overflow: hidden}
+#BODY table{margin: 0 auto;}
+#CONTENT {margin-left:300px;}
+#CONTENT p{color: #000}
+
+#CONTENT h1 {padding-bottom: 10px;}
+
+#CONTENT ul {float: left;margin: 0 35px;}
+#CONTENT li {padding: 5px 0; list-style: circle}
+#CONTENT h2, #CONTENT h4, #CONTENT p {
+padding:6px 20px 6px 20px;
+font-size:15px;
+}
+#CONTENT h2 {
+font-family: Arial;
+font-size: 24px;
+text-align: center;
+padding-top: 10px;
+background-color:#666;
+color:#FFF;
+letter-spacing:10px;
+border-top:2px #999 solid;
+}
+/*---- 頁尾 ----*/
+#FOOTER {
+clear: both;
+background-color: #a8a8a8;
+margin-top: 50px
+}
+#FOOTER h2, #FOOTER p {
+font-size: 12px;
+padding:5px 20px;
+font-family: Arial;
+color: #FFFFFF;
+}
+.clearfloat {
+clear:both;
+height:0;
+font-size: 1px;
+line-height: 0px;
+}
+/*----- 其他 -----*/
+.menu_button {
+    display: block;
+}
