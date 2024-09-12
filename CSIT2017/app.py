@@ -25,5 +25,5 @@ def program():
     return render_template('program.html')
 
 if __name__ == '__main__':
-   app.run(debug=True)
+   app.run(host="0.0.0.0", debug=True)
    # app.run(debug=False, host="140.115.59.23")
