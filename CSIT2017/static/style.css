@@ -12,13 +12,12 @@ body {font-family: '微軟正黑體',Arial,'cwtexkai', sans-serif;}
 width: 1200px;
 margin:0 auto;
 background-color: white;
-background-image: url(../footage/crossword.png)
 }
 /*---- 頁首 ----*/
 #HEADER {
 background-color:#478ab6;
 }
-#HEADER img{padding: 10px 0;width: 60%;}
+#HEADER img{width: 100%;}
 #HEADER h1 a {
 text-indent: -9999px;
 display: block;
