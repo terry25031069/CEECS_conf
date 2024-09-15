@@ -1,0 +1,31 @@
+<table width="750" border="1px solid rgba(48, 98, 167, 0.61)" align="center">
+    <tbody>
+        <tr>
+            <td width="120" bgcolor="#5d92c7">
+                <p align="center">
+                    <strong>日期/</strong><strong>時間 </strong>
+                </p>
+            </td>
+            <td width="440" bgcolor="#5d92c7">
+                <p align="center">
+                    <strong>{{ day.date }}</strong>
+                </p>
+            </td>
+        </tr>
+        {% for event in day.events %}
+        <tr>
+            <td width="120" bgcolor="#8ecaf5">
+                <div align="center" class="style1 style10">
+                    <strong>{{ event.time }}</strong>
+                </div>
+            </td>
+            <td width="440">
+                <p align="center">
+                    <strong>{{ event.description }}</strong>
+                </p>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<p>&nbsp;</p>
