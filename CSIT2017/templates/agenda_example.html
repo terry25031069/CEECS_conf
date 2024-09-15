@@ -1,0 +1,427 @@
+{% extends "base.html" %}
+{% block title %}第廿六屆海峽兩岸資訊技術研討會{% endblock %}
+{% block content %}
+
+<div id="BODY" style="padding-top: 2.5%; padding-right: 5%; padding-left: 5%;">
+    <h1>日程安排</h1>
+    <div style="text-align: center; margin-bottom: 20px;">
+        <button onclick="showSchedule('day1')">11月27日(星期一)</button>
+        <button onclick="showSchedule('day2')">11月28日(星期二)</button>
+        <button onclick="showSchedule('day3')">11月29日(星期三)</button>
+        <button onclick="showSchedule('day4')">11月30日(星期四)</button>
+    </div>
+
+    <div id="day1" class="schedule">
+        <table width="750" border="1px solid rgba(48, 98, 167, 0.61)" align="center">
+            <tbody>
+                <tr>
+                    <td width="120" bgcolor="#5d92c7">
+                        <p align="center">
+                            <strong>日期/</strong><strong>時間 </strong>
+                        </p>
+                    </td>
+                    <td width="440" bgcolor="#5d92c7">
+                        <p align="center">
+                            <strong>11</strong><strong>月27</strong><strong>日(</strong><strong>星期一)</strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="120" bgcolor="#8ecaf5">
+                        <div align="center" class="style1 style10">
+                            <strong>17:00</strong>
+                        </div>
+                    </td>
+                    <td width="440">
+                        <p align="center">
+                            <strong>抵達桃園國際機場 </strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="120" bgcolor="#8ecaf5">
+                        <div align="center" class="style1 style10">
+                            <strong>18:30</strong>
+                        </div>
+                    </td>
+                    <td width="440">
+                        <p align="center">
+                            <strong>註冊/</strong><strong>接待晚宴/</strong><strong>安排住宿
+                            </strong>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="day2" class="schedule" style="display:none;">
+        <table width="750px" border="1px solid rgba(48, 98, 167, 0.61)" align="center">
+            <tbody>
+                <tr>
+                    <td width="107px" bgcolor="#5d92c7">
+                        <p align="center">
+                            <strong>日期/</strong><strong>時間 </strong>
+                        </p>
+                    </td>
+                    <td width="440" colspan="4" bgcolor="#5d92c7">
+                        <p align="center">
+                            <strong>11</strong><strong>月28</strong><strong>日(</strong><strong>星期二)</strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="107px" bgcolor="#8ecaf5">
+                        <div align="center" class="style1 style10">
+                            <strong>09:00 ~ 09:30</strong>
+                        </div>
+                    </td>
+                    <td width="440" colspan="4">
+                        <p align="center">
+                            <strong>開幕致詞 </strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="107px" bgcolor="#fff7d8">
+                        <div align="center" class="style10">
+                            <strong>09:30 ~ 09:45</strong>
+                        </div>
+                    </td>
+                    <td width="440" colspan="4" bgcolor="#fff7d8">
+                        <div align="center">
+                            <strong>貴賓合影</strong>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="107px" bgcolor="#8ecaf5">
+                        <div align="center" class="style1 style10">
+                            <strong>09:45 ~ 10:30</strong>
+                        </div>
+                    </td>
+                    <td width="440" colspan="4">
+                        <p align="left">
+                            <strong>【專題演講I】<br> 演講者：中央大學資訊工程學系&nbsp;&nbsp;張嘉惠&nbsp;教授
+                            </strong>
+                        </p>
+                        <p align="left">
+                            <strong> 講 題：From Information Extraction to Message Understanding - The <br>
+                                <u style="opacity: 0;">講 題：</u>Ultimate Challenge of AI<br><u style="opacity: 0;">講
+                                    題：</u>人工智慧的終極挑戰-自然語言理解</strong>
+                        </p>
+                        <p align="left">
+                            <strong> 地 點：工程五館A207</strong>
+                        </p>
+                        <p align="left">
+                            <strong> 主持人：國立中央大學資訊工程學系許富皓主任<br>
+                            </strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="107px" bgcolor="#fff7d8">
+                        <div align="center" class="style10">
+                            <strong>10:30 ~ 10:40</strong>
+                        </div>
+                    </td>
+                    <td width="440" colspan="4" bgcolor="#fff7d8">
+                        <div align="center">
+                            <strong>茶敘</strong>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="107px" bgcolor="#8ecaf5">
+                        <div align="center" class="style1 style10">
+                            <strong>10:40 ~ 11:25</strong>
+                        </div>
+                    </td>
+                    <td width="440" colspan="4">
+                        <p align="left">
+                            <strong>【專題演講II】<br> 演講者：中央大學網路學習科技研究所&nbsp;&nbsp;陳德懷&nbsp;講座教授
+                            </strong>
+                        </p>
+                        <p align="left">
+                            <strong> 講 題：明日閱讀與數位學習趨勢</strong>
+                        </p>
+                        <p align="left">
+                            <strong> 地 點：工程五館A207</strong>
+                        </p>
+                        <p align="left">
+                            <strong> 主持人：國立中央大學資電學院邱煥凱副院長<br>
+                            </strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="107px" bgcolor="#8ecaf5">
+                        <div align="center" class="style1 style10">
+                            <strong>11:25 ~ 12:10</strong>
+                        </div>
+                    </td>
+                    <td width="440" colspan="4">
+                        <p align="left">
+                            <strong>【專題演講III】<br> 演講者：南京大學計算機科學與技術系&nbsp;&nbsp;高陽&nbsp;教授
+                            </strong>
+                        </p>
+                        <p align="left">
+                            <strong> 講 題：多智能體強化學習中的博弈與均衡</strong>
+                        </p>
+                        <p align="left">
+                            <strong> 地 點：工程五館A207</strong>
+                        </p>
+                        <p align="left">
+                            <strong> 主持人：東南大學電腦科學與工程學院李偉副院長<br>
+                            </strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="107px" bgcolor="#fff7d8">
+                        <div align="center" class="style10">
+                            <strong>12:10 ~ 13:30</strong>
+                        </div>
+                    </td>
+                    <td width="440" colspan="4" bgcolor="#fff7d8">
+                        <div align="center">
+                            <strong>午餐</strong>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="107px" bgcolor="#8ecaf5">
+                        <div align="center" class="style1 style10">
+                            <strong>13:30 ~ 15:00</strong>
+                        </div>
+                    </td>
+                    <td width="110" valign="top">
+                        <p align="center" class="style10">
+                            <strong>【研討會 A1】</strong>
+                        </p>
+                        <p align="center" class="style10">&nbsp;</p>
+                        <p align="center" class="style10">
+                            <strong><span class="style2">通訊工程/電路設計</span><br> </strong>
+                        </p>
+                        <p align="center" class="style10">&nbsp;</p>
+                        <p align="center" class="style10">
+                            <strong>工程五館<br> A203
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="110" valign="top">
+                        <p align="center" class="style10">
+                            <strong>【研討會 B1】</strong>
+                        </p>
+                        <p align="center" class="style10">&nbsp;</p>
+                        <p align="center" class="style2"><strong>多媒體處理/資訊安全</strong></p>
+                        <p align="center" class="style10">&nbsp;</p>
+                        <p align="center" class="style10">
+                            <strong>工程五館<br> A301
+                            </strong>
+                        </p>
+                        <p align="center" class="style10">&nbsp;</p>
+                    </td>
+                    <td width="110" valign="top">
+                        <p align="center" class="style10">
+                            <strong>【研討會 C1】</strong>
+                        </p>
+                        <p align="center" class="style10">&nbsp;</p>
+                        <p align="center" class="style10">
+                            <strong><span class="style3">醫療工程/深度學習</span><br> </strong>
+                        </p>
+                        <p align="center" class="style10">&nbsp;</p>
+                        <p align="center" class="style10">
+                            <strong>工程五館<br> A302
+                            </strong>
+                        </p>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td width="107px" bgcolor="#fff7d8">
+                        <div align="center" class="style10">
+                            <strong>15:00 ~ 15:30</strong>
+                        </div>
+                    </td>
+                    <td width="440" colspan="4" bgcolor="#fff7d8">
+                        <div align="center">
+                            <strong>茶敘</strong>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="107px" bgcolor="#8ecaf5">
+                        <div align="center" class="style1 style10">
+                            <strong>15:30 ~ 17:00</strong>
+                        </div>
+                    </td>
+                    <td width="110" valign="top">
+                        <p align="center" class="style10">
+                            <strong>【研討會 A2】</strong>
+                        </p>
+                        <p align="center" class="style10">&nbsp;</p>
+                        <p align="center" class="style10">
+                            <strong><span class="style2">資料處理工程</span><br> </strong>
+                        </p>
+                        <p align="center" class="style10">&nbsp;</p>
+                        <p align="center" class="style10">
+                            <strong>工程五館<br> A203
+                            </strong>
+                        </p>
+                        <p align="center" class="style10">&nbsp;</p>
+                    </td>
+                    <td width="110" valign="top">
+                        <p align="center" class="style10">
+                            <strong>【研討會 B2】</strong>
+                        </p>
+                        <p align="center" class="style10">&nbsp;</p>
+                        <p align="center" class="style2"><strong>資料傳輸工程</strong></p>
+                        <p align="center" class="style10">&nbsp;</p>
+                        <p align="center" class="style10">
+                            <strong>工程五館<br>A301
+                            </strong>
+                        </p>
+                    </td>
+                    <td width="110" valign="top">
+                        <p align="center" class="style10">
+                            <strong>【研討會 C2】</strong>
+                        </p>
+                        <p align="center" class="style10">&nbsp;</p>
+                        <p align="center" class="style10">
+                            <strong><span class="style3">資料庫工程/學習科技</span><br> </strong>
+                        </p>
+                        <p align="center" class="style10">&nbsp;</p>
+                        <p align="center" class="style10">
+                            <strong>工程五館<br> A302
+                            </strong>
+                        </p>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td width="107px" bgcolor="#fff7d8">
+                        <div align="center" class="style10">
+                            <strong>18:30 ~ 21:00</strong>
+                        </div>
+                    </td>
+                    <td width="440" colspan="4" bgcolor="#fff7d8">
+                        <div align="center">
+                            <strong>晚宴</strong>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="day3" class="schedule" style="display:none;">
+        <table width="750" border="1px solid rgba(48, 98, 167, 0.61)" align="center">
+            <tbody>
+                <tr>
+                    <td width="120" bgcolor="#5d92c7">
+                        <p align="center">
+                            <strong>日期/</strong><strong>時間 </strong>
+                        </p>
+                    </td>
+                    <td width="440" bgcolor="#5d92c7">
+                        <p align="center">
+                            <strong>11</strong><strong>月29</strong><strong>日(</strong><strong>星期三)</strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="120" bgcolor="#8ecaf5">
+                        <div align="center" class="style1 style10">
+                            <strong>09:00 ~ 12:00</strong>
+                        </div>
+                    </td>
+                    <td width="440">
+                        <p align="center">
+                            <strong>技術會議(分組討論)</strong>
+                        </p>
+                        <p align="center">
+                            <strong>地點:工程五館A301、A203、A205會議室</strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="120" bgcolor="#8ecaf5">
+                        <div align="center" class="style1 style10">
+                            <strong>14:00 ~ 17:00</strong>
+                        </div>
+                    </td>
+                    <td width="440">
+                        <p align="center">
+                            <strong>海報張貼</strong>
+                        </p>
+                        <p align="center">
+                            <strong>地點:工程五館一樓大廳</strong>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="day4" class="schedule" style="display:none;">
+        <table width="750" border="1px solid rgba(48, 98, 167, 0.61)" align="center">
+            <tbody>
+                <tr>
+                    <td width="120" bgcolor="#5d92c7">
+                        <p align="center">
+                            <strong>日期/</strong><strong>時間 </strong>
+                        </p>
+                    </td>
+                    <td width="440" bgcolor="#5d92c7">
+                        <p align="center">
+                            <strong>11</strong><strong>月30</strong><strong>日(</strong><strong>星期四)</strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="120" bgcolor="#8ecaf5">
+                        <div align="center" class="style1 style10">
+                            <strong>09:00 ~ 12:00</strong>
+                        </div>
+                    </td>
+                    <td width="440">
+                        <p align="center">
+                            <strong>技術會議(分組討論)</strong>
+                        </p>
+                        <p align="center">
+                            <strong>地點:工程五館A301、A203、A205會議室</strong>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="120" bgcolor="#8ecaf5">
+                        <div align="center" class="style1 style10">
+                            <strong>14:00 ~ 17:00</strong>
+                        </div>
+                    </td>
+                    <td width="440">
+                        <p align="center">
+                            <strong>海報張貼</strong>
+                        </p>
+                        <p align="center">
+                            <strong>地點:工程五館一樓大廳</strong>
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    function showSchedule(dayId) {
+        var schedules = document.getElementsByClassName('schedule');
+        for (var i = 0; i < schedules.length; i++) {
+            schedules[i].style.display = 'none';
+        }
+        document.getElementById(dayId).style.display = 'block';
+    }
+</script>
+    
+{% endblock %}

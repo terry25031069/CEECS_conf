@@ -6,7 +6,7 @@
                     <strong>日期/</strong><strong>時間 </strong>
                 </p>
             </td>
-            <td width="440" bgcolor="#5d92c7">
+            <td width="440" bgcolor="#5d92c7" colspan="4">
                 <p align="center">
                     <strong>{{ day.date }}</strong>
                 </p>
@@ -14,15 +14,17 @@
         </tr>
         {% for event in day.events %}
         <tr>
-            <td width="120" bgcolor="#8ecaf5">
+            <td width="120" bgcolor="{{ event.titlecolor }}">
                 <div align="center" class="style1 style10">
                     <strong>{{ event.time }}</strong>
                 </div>
             </td>
-            <td width="440">
-                <p align="center">
-                    <strong>{{ event.description }}</strong>
-                </p>
+            <td width="440" colspan="{{ event.colspan }}" bgcolor="{{ event.bgcolor }}">
+                {% for subdescription in event.description %}
+                    <p align="center">
+                        <strong>{{ subdescription }}</strong>
+                    </p>
+                {% endfor %}
             </td>
         </tr>
         {% endfor %}
