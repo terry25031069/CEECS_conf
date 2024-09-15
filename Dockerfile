@@ -11,7 +11,10 @@ COPY CSIT2017 /app
 RUN pip install flask
 
 # 暴露 Flask 的預設端口
-EXPOSE 5000
+EXPOSE 3333
 
 # 啟動 Flask 應用程序
 CMD ["python", "app.py"]
+
+# docker build -t csit .
+# docker run --name csit-container -p 80:3333 --memory 512m csit
