@@ -15,17 +15,19 @@
         {% for event in day.events %}
         <tr>
             <td width="120" bgcolor="{{ event.titlecolor }}">
-                <div align="center" class="style1 style10">
+                <div align="center">
                     <strong>{{ event.time }}</strong>
                 </div>
             </td>
+            {% for subdescription in event.description %}
             <td width="440" colspan="{{ event.colspan }}" bgcolor="{{ event.bgcolor }}">
-                {% for subdescription in event.description %}
-                    <p align="center">
-                        <strong>{{ subdescription }}</strong>
-                    </p>
+                {% for sentence in subdescription %}
+                <p align="center">
+                    <strong>{{ sentence }}</strong>
+                </p>
                 {% endfor %}
             </td>
+            {% endfor %}
         </tr>
         {% endfor %}
     </tbody>
