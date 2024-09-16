@@ -4,10 +4,10 @@
 <div id="BODY" style="padding-top: 2.5%; padding-right: 5%; padding-left: 5%;">
     <h1>日程安排</h1>
     <div style="text-align: center; margin-bottom: 20px;">
-        <button onclick="showSchedule('day1')">11月27日(星期一)</button>
-        <button onclick="showSchedule('day2')">11月28日(星期二)</button>
-        <button onclick="showSchedule('day3')">11月29日(星期三)</button>
-        <button onclick="showSchedule('day4')">11月30日(星期四)</button>
+        <button class="button" onclick="showSchedule('day1')">11月27日(星期一)</button>
+        <button class="button" onclick="showSchedule('day2')">11月28日(星期二)</button>
+        <button class="button" onclick="showSchedule('day3')">11月29日(星期三)</button>
+        <button class="button" onclick="showSchedule('day4')">11月30日(星期四)</button>
     </div>
     {% for day in schedule %}
         <div id="{{ day.divname }}" class="schedule" style="display: {% if loop.first %}block{% else %}none{% endif %};">
