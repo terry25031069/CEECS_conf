@@ -17,10 +17,9 @@
         <div id="MAIN_NAV">
             <ul>
                 <li><a href="{{ url_for('index') }}">徵稿通知</a></li>
-                <!-- <li><a href="{{ url_for('agenda') }}">日程安排</a></li>
-                <li><a href="{{ url_for('program') }}">議程</a></li>
-                <li><a href="{{ url_for('organization') }}">組織名單</a></li> -->
-                <li><a href="{{ url_for('traffic') }}">交通資訊</a></li>
+                <li><a href="{{ url_for('agenda') }}">會議議程</a></li>
+                <li><a href="/static/guide.pdf">大會手冊</a></li>
+                <!-- <li><a href="{{ url_for('organization') }}">組織名單</a></li> -->
             </ul>
         </div>
         <div id="SUB_NAV_1">
@@ -30,33 +29,40 @@
             </ul>
             <ul>
                 <h3>重要日期</h3>
-                <!-- <li>截稿日期：<strike>2017年10月1日</strike><br>
-                    <div><u style="opacity: 0;">截稿日期：</u><strike>2017年10月25日&nbsp;(Extended)</strike></div>
-                    <div style="color: red;"><u style="opacity: 0;">截稿日期：</u>2017年11月2日&nbsp;(Final extended)</div>
-                </li> -->
-                <li>截稿日期：2024 年 10 月 11 日
-                <li>會議時間：2024 年 11 月 11 日 - 16 日</li>
+                <li>截稿日期：2024 年 10 月 11 日 (延長至 11 月 30 日)</li>
+                <li>會議時間：2025 年 1 月 6 日 - 10 日</li>
             </ul>
             <ul>
+                <h3>指導單位</h3>
+                <p align="center">
+                    <a href="https://www.edu.tw/Default.aspx" target="_blank">
+                        <img src="{{url_for('static', filename='org_logo/Ministry_Edu.png')}}" width="260" height="125">
+                    </a>
+                </p>
+
                 <h3>主辦單位</h3>
                 <p align="center">
                     <a href="http://www.ncu.edu.tw/" target="_blank">
-                        <img src="{{url_for('static', filename='NCU_Logo.gif')}}" width="240" height="71">
+                        <img src="{{url_for('static', filename='org_logo/ncu.jpg')}}" width="180" height="160">
                     </a>
                 </p>
-
+                
+                <h3>協辦單位</h3>
                 <p align="center">
                     <a href="http://www.seu.edu.cn/" target="_blank">
-                        <img src="{{url_for('static', filename='SEU_Logo.gif')}}" width="240" height="71">
+                        <img src="{{url_for('static', filename='org_logo/Misistry_Sci_Tech.png')}}" width="240" height="71">
                     </a>
                 </p>
-
-                <h3>協辦單位</h3>
-                <!-- <p align="center">
-                    <a href="https://www.taai.org.tw/" target="_blank">
-                        <img src="{{url_for('static', filename='taai_2x.png')}}" width="240" height="72">
+                <p align="center">
+                    <a href="http://www.seu.edu.cn/" target="_blank">
+                        <img src="{{url_for('static', filename='org_logo/seu.png')}}" width="240" height="200">
                     </a>
-                </p> -->
+                </p>
+                <p align="center">
+                    <a href="http://www.example.com/" target="_blank">
+                        <img src="{{url_for('static', filename='org_logo/tegta.png')}}" width="240" height="150">
+                    </a>
+                </p>
             </ul>
 
         </div>

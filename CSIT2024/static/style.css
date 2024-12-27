@@ -32,7 +32,7 @@ background-color: antiquewhite
 #MAIN_NAV a{display: block;padding: 8px 40px;color: #fff;letter-spacing: 3px;}
 #MAIN_NAV a:hover {background-color: #2279b2;}
 /*---- 次選單 1 ----*/
-#SUB_NAV_1{clear: both; float:left; width:300px;padding-left: 10px}
+#SUB_NAV_1{clear: both; float:left; width:310px;padding-left: 10px}
 #SUB_NAV_1 ul {padding: 8px 10px;border-bottom: 1px solid rgba(67, 67, 67, 0.38) }
 #SUB_NAV_1 ul li{padding: 3px 0;font-size: .8rem; }
 #SUB_NAV_1 h3 {padding: 5px 20px 5px 0} 

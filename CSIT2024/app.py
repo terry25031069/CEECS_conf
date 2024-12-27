@@ -16,10 +16,6 @@ def agenda():
 def organization():
     return render_template('organization.html')
 
-@app.route('/traffic')
-def traffic():
-    return render_template('traffic.html')
-
 @app.route('/program')
 def program():
     return render_template('program.html')
