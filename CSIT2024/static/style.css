@@ -94,7 +94,7 @@ line-height: 0px;
 }
 /* CSIT2017/static/style.css */
 .button {
-    background-color: #1e5b83;
+    background-color: #ff766c;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -109,5 +109,5 @@ line-height: 0px;
 }
 
 .button:hover {
-    background-color: #2279b2;
+    background-color: #ff9999;
 }
