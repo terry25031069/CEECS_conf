@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h3 {
+    color: #7334a2;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate; /* 使用 separate 來啟用 border-spacing */
+    border-spacing: 1px; /* 設置內外框縫隙 */
+    margin: 20px 0;
+    border: 1px solid black; /* 添加表格邊框 */
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid black; /* 添加單元格邊框 */
+}
+
+.header {
+    margin-bottom: 10px;
+}
+
+/* 調整列寬比例 */
+colgroup col:nth-child(1) {
+    width: 15%;
+}
+
+colgroup col:nth-child(2) {
+    width: 60%;
+}
+
+colgroup col:nth-child(3) {
+    width: 25%;
+}

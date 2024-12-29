@@ -68,7 +68,93 @@ def agenda():
                 tmp_list = descriptions[i].split("  ")
                 schedule[day]['events'][event]['description'][i] = tmp_list
 
-    return render_template('agenda.html', schedule=schedule)
+    forums = [
+        {
+            "title": "【分組論壇一】",
+            "subtitle": "網路計算與電子分論壇 (Network Computing and Electronics) (I)",
+            "hosts": "燕鋒教授、胡誌臨教授",
+            "time": "14:00-15:30",
+            "location": "電機 E1-233 會議室",
+            "titlecolor": "8eaadb",
+            "papers": [
+                {"id": "NCE01", "title": "應用前饋式等化器補償之接收端電路", "author": "鄭國興"},
+                {"id": "NCE02", "title": "基於深度學習之二維材料原子缺陷檢測框架", "author": "林家瑜"},
+                {"id": "NCE03", "title": "密集無線網路中 AP 輔助的自適應視頻流傳輸機制", "author": "吳文甲"},
+                {"id": "NCE04", "title": "群感感知環境下基於社群網路的協作式多用戶任務分配方法", "author": "胡誌臨"},
+                {"id": "NCE05", "title": "強烈電磁脈衝影響下多用戶 MIMO 異質網路的覆蓋機率和區域頻譜效率", "author": "燕鋒"}]
+        }, {
+            "title": "【分組論壇二】",
+            "subtitle": "人工智能分論壇 (Artificial Intelligence) (I)",
+            "hosts": "梁吉業教授、林家瑜教授",
+            "time": "14:00-15:30",
+            "location": "電機 E1-225 會議室",
+            "titlecolor": "8eaadb",
+            "papers": [
+                {"id": "AI01", "title": "基於樣本穩定性的分類任務研究", "author": "曹付元"},
+                {"id": "AI02", "title": "帳單類別郵件之郵遞區號辨識", "author": "王文俊"},
+                {"id": "AI03", "title": "輸出可信的深度聚類網路", "author": "賈育衡"},
+                {"id": "AI04", "title": "AI 驅動的博物館文物識別：反光消除、影像處理與分類技術的集成應用", "author": "林家瑜"},
+                {"id": "AI05", "title": "表示學習研究進展與展望", "author": "梁吉業"}]
+        },{
+            "title": "【分組論壇三】",
+            "subtitle": "永續應用分論壇 (Sustainable Applications) (I)",
+            "hosts": "賀龍兵教授、陳正一教授",
+            "time": "14:00-15:30",
+            "location": "通訊 E1-211 會議室",
+            "titlecolor": "8eaadb",
+            "papers": [
+                {"id": "SA01", "title": "基於層次分析法與熵值法之改良式粒子群優化策略於多目標最佳化能源管理系統", "author": "陳正一"},
+                {"id": "SA02", "title": "基於模糊派翠類神經網路的太陽能平滑化控制", "author": "陳正一"},
+                {"id": "SA03", "title": "適配於原位 TEM 應用的電、熱學分析型芯片研製", "author": "賀龍兵"},
+                {"id": "SA04", "title": "以向日葵 8 號氣象衛星預測台灣區域雨量", "author": "陳映濃"},
+                {"id": "SA05", "title": "具有零電流開關和倍壓單元的高升壓直流-直流轉換器", "author": "徐國鎧"}]
+        },{
+            "title": "【分組論壇一】",
+            "subtitle": "網路計算與電子分論壇 (Network Computing and Electronics) (II)",
+            "hosts": "王帥教授、陳永芳教授",
+            "time": "16:00~17:30",
+            "location": "電機 E1-233 會議室",
+            "titlecolor": "ffe599",
+            "papers": [
+                {"id": "NCE06", "title": "矽量子點和光熱半導體奈米材料於綠能與生醫領域的應用", "author": "杜長慶"},
+                {"id": "NCE07", "title": "Wepos 面向即時配送的弱監督無標籤 Wi-Fi 室內定位", "author": "王帥"},
+                {"id": "NCE08", "title": "RFI 對基於 FIR 的自適應均衡器影響的研究", "author": "薛木添"},
+                {"id": "NCE09", "title": "基於 Zadoff-Chu 序列之多輸入多輸出低軌道衛星通訊系統迭代載波頻率偏移與通道估測演算法設計", "author": "陳永芳"},
+                {"id": "NCE10", "title": "28 奈米 2Mb 22.4 – 41.5TOPS/W 的 AI 推理性能 STT-MRAM 計算存儲器宏單元", "author": "蔡浩"},
+                {"id": "NCE11", "title": "運用高效能圖形處理器與 AI 技術於無人機之實時影像偵測與追蹤", "author": "張大中"}]
+        }, {
+            "title": "【分組論壇二】",
+            "subtitle": "人工智能分論壇 (Artificial Intelligence) (II)",
+            "hosts": "吳小俊教授、孫敏德教授",
+            "time": "16:00~17:30",
+            "location": "電機 E1-225 會議室",
+            "titlecolor": "ffe599",
+            "papers": [
+                {"id": "AI06", "title": "CA-Wav2Lip: 基於坐標注意力的野外語音到唇部合成", "author": "孫敏德"},
+                {"id": "AI07", "title": "基於深度學習的多模態視覺融合方法", "author": "吳小俊"},
+                {"id": "AI08", "title": "雙曲表徵的龐加萊核", "author": "方鵬飛"},
+                {"id": "AI09", "title": "模組化虛擬助教與生成式 AI 學習平台之實證研究：以 Python 課程為例", "author": "張家凱"},
+                {"id": "AI10", "title": "考量老化的 AI 加速器設計", "author": "陳聿廣"}]
+        },{
+            "title": "【分組論壇三】",
+            "subtitle": "永續應用分論壇 (Sustainable Applications) (II)",
+            "hosts": "丁玎教授、葉士青教授",
+            "time": "16:00~17:30",
+            "location": "通訊 E1-211 會議室",
+            "titlecolor": "ffe599",
+            "papers": [
+                {"id": "SA06", "title": "流浪足跡：基於沉浸式虛擬現實的第一人稱流浪動物生活體驗系統", "author": "丁玎"},
+                {"id": "SA07", "title": "重複性經顱磁刺激同步虛擬實境與生理監測用於失語症創新治療與評估", "author": "葉士青"},
+                {"id": "SA08", "title": "基於姿態辨識與壓力感測的智能瑜伽指導應用", "author": "蘇木春"},
+                {"id": "SA09", "title": "運用「數位魔鏡」情境學習模式提升職業教育學習成效與參與度：以餐旅管理系學生為例", "author": "陳國棟"},
+                {"id": "SA10", "title": "區塊鏈整合 V2X 網路之多連接管理效能評估", "author": "黃志煒"},
+                {"id": "SA11", "title": "A Speech and Lip Reading System with Generating Text to Assist Hearing-Impaired People", "author": "蔡宗漢"}
+                ]
+        }
+    ]
+
+    return render_template('agenda.html', schedule=schedule, forums=forums)
+
 
 @app.route('/organization')
 def organization():
@@ -79,4 +165,4 @@ def program():
     return render_template('program.html')
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", debug=False, port=3333)
+    app.run(host="0.0.0.0", debug=True, port=3333)

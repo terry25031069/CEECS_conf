@@ -7,12 +7,16 @@
         <button class="button" onclick="showSchedule('day2')">1月7日(星期二)</button>
         <button class="button" onclick="showSchedule('day3')">1月8日(星期三)</button>
         <button class="button" onclick="showSchedule('day4')">1月9日(星期四)</button>
+        <button class="button" onclick="showSchedule('day2-detail')">1月7日分組論壇名單</button>
     </div>
     {% for day in schedule %}
         <div id="{{ day.divname }}" class="schedule" style="display: {% if loop.first %}block{% else %}none{% endif %};">
             {% include 'schedule_table.html' %}
         </div>
     {% endfor %}
+    <div id="day2-detail" class="schedule" style="display: none;">
+        {% include 'day2_detail.html' %}
+    </div>  
 </div>
 <script>
     function showSchedule(day) {
