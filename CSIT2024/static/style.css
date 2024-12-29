@@ -111,3 +111,17 @@ line-height: 0px;
 .button:hover {
     background-color: #ff9999;
 }
+
+table {
+    width: 800px;
+    border: 1px solid rgba(48, 98, 167, 0.61);
+    margin: 0 auto;
+}
+
+table td {
+    width: 130px;
+}
+
+table td[colspan="4"] {
+    width: 660px;
+}

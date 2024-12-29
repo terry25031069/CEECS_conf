@@ -1,12 +1,12 @@
-<table width="750" border="1px solid rgba(48, 98, 167, 0.61)" align="center">
+<table border="1px solid rgba(48, 98, 167, 0.61)" align="center">
     <tbody>
         <tr>
-            <td width="120" bgcolor="#ff9999">
+            <td bgcolor="#ff9999">
                 <p align="center">
-                    <strong>時間 </strong>
+                    <strong>時間/日期 </strong>
                 </p>
             </td>
-            <td width="440" bgcolor="#ff9999" colspan="4">
+            <td bgcolor="#ff9999" colspan="4">
                 <p align="center">
                     <strong>{{ day.date }}</strong>
                 </p>
@@ -14,13 +14,13 @@
         </tr>
         {% for event in day.events %}
         <tr>
-            <td width="120" bgcolor="{{ event.titlecolor }}">
+            <td bgcolor="{{ event.titlecolor }}">
                 <div align="center">
                     <strong>{{ event.time }}</strong>
                 </div>
             </td>
             {% for subdescription in event.description %}
-            <td width="440" colspan="{{ event.colspan }}" bgcolor="{{ event.bgcolor }}">
+            <td colspan="{{ event.colspan }}" bgcolor="{{ event.bgcolor }}">
                 {% for sentence in subdescription %}
                 <p align="center">
                     <strong>{{ sentence }}</strong>
