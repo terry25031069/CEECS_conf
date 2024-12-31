@@ -163,11 +163,11 @@ def agenda():
 def organization():
     honor_chair = [
         "周景揚 中央大學校長", 
-        "黃　如 東南大學校長"
+        "黃　如 东南大学校長"
     ]
     conference_chair = [
         "綦振瀛 中央大學副校長", 
-        "金　石 東南大學副校長"
+        "金　石 东南大学副校長"
     ]
     session_chair_0 = [
         "蘇木春 中央大學資訊電機學院", 
