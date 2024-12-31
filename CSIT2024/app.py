@@ -156,9 +156,77 @@ def agenda():
     return render_template('agenda.html', schedule=schedule, forums=forums)
 
 
-@app.route('/organization')
+# @app.route('/organization')
+# def organization():
+#     return render_template('organization.html')
+@app.route("/organization")
 def organization():
-    return render_template('organization.html')
+    honor_chair = [
+        "周景揚 中央大學校長", 
+        "黃　如 東南大學校長"
+    ]
+    conference_chair = [
+        "綦振瀛 中央大學副校長", 
+        "金　石 東南大學副校長"
+    ]
+    session_chair_0 = [
+        "蘇木春 中央大學資訊電機學院", 
+        "张敏灵 东南大学计算机科学与工程学院"
+    ]
+    session_chair_1 = [
+        "王文俊 中央大學電機工程學系教授", 
+        "李柏磊 中央大學資訊電機學院"
+    ]
+    committee_members_0 = [
+        "鄭國興 中央大學電機工程學系教授", 
+        "徐國鎧 中央大學電機工程學系教授", 
+        "蔡宗漢 中央大學電機工程學系教授", 
+        "陳正一 中央大學資訊工程學系教授", 
+        "薛木添 中央大學電機工程學系教授", 
+        "陳聿廣 中央大學電機工程學系教授", 
+        "杜長慶 中央大學電機工程學系教授", 
+        "孫敏德 中央大學資訊工程學系教授", 
+        "陳國棟 中央大學資訊工程學系教授", 
+        "林家瑜 中央大學資訊工程學系教授", 
+        "陳永芳 中央大學通訊工程學系教授", 
+        "張大中 中央大學通訊工程學系教授", 
+        "黃志煒 中央大學通訊工程學系教授", 
+        "范國清 中央大學資訊工程學系教授", 
+        "陳映濃 中央大學太空及遙測研究中心教授", 
+        "葉士青 中央大學資訊工程學系教授", 
+        "吳曉光 中央大學資訊工程學系教授", 
+        "胡誌麟 中央大學通訊工程學系教授", 
+    ]
+    committee_members_1 = [
+        "張家凱 中央大學通識教育中心教授", 
+        "周承復 台灣大學資訊工程學系教授", 
+        "惠 霖 淡江大學資訊工程學系教授", 
+        "刘 静 东南大学港澳台办科长", 
+        "楊冠羽 东南大学计算机科学与工程学院副院長", 
+        "王 帅 东南大学计算机科学与工程学院教授",
+        "丁 玎 东南大学计算机科学与工程学院副教授",
+        "贾育衡 东南大学计算机科学与工程学院副教授",
+        "方鹏飞 东南大学计算机科学与工程学院副教授",
+        "吴文甲 东南大学计算机科学与工程学院副教授",
+        "贺龙兵 东南大学集成电路学院教授、副院长",
+        "蔡 浩 东南大学集成电路学院副教授、院长助理",
+        "燕 锋 东南大学信息科学与工程学院副教授、院长助理",
+        "卢 苇 北京交通大学软件学院教授",
+        "过敏意 上海交通大学电子信息与电气工程学院教授",
+        "吴小俊 江南大学研究生院/科技部教授、院长",
+        "梁吉业 山西大学计算机与信息技术学院教授",
+        "曹付元 山西大学计算机与信息技术学院教授、院长",
+    ]
+
+    return render_template(
+        "organization.html",
+        honor_chair=honor_chair,
+        conference_chair=conference_chair,
+        session_chair_0=session_chair_0,
+        session_chair_1=session_chair_1,
+        committee_members_0=committee_members_0,
+        committee_members_1=committee_members_1,
+    )
 
 @app.route('/program')
 def program():

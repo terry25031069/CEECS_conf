@@ -1,8 +1,8 @@
 @import url(//fonts.googleapis.com/earlyaccess/cwtexkai.css);
 
 /*font-family: 'cwTeXHei', sans-serif;*/
-* {margin:0;padding:0;}
-li {list-style: none}
+* {margin:0; padding:0;}
+li {list-style-type: none}
 a {text-decoration: none}
 body,html{width: 100%}
 body {font-family: '微軟正黑體',Arial,'cwtexkai', sans-serif;}
@@ -34,7 +34,7 @@ background-color: antiquewhite
 /*---- 次選單 1 ----*/
 #SUB_NAV_1{clear: both; float:left; width:310px;padding-left: 10px}
 #SUB_NAV_1 ul {padding: 8px 10px;border-bottom: 1px solid rgba(67, 67, 67, 0.38) }
-#SUB_NAV_1 ul li{padding: 3px 0;font-size: .8rem; }
+#SUB_NAV_1 ul li{padding: 3px 0;font-size: .8rem;}
 #SUB_NAV_1 h3 {padding: 5px 20px 5px 0} 
 #SUB_NAV_1 a{ color:#6699FF;}
 #SUB_NAV_1 a:hover{ color:#FF0000;}
@@ -55,7 +55,7 @@ background-color: antiquewhite
 #CONTENT h1 {padding-bottom: 10px;}
 
 #CONTENT ul {float: left;margin: 0 35px;}
-#CONTENT li {padding: 5px 0; list-style: circle}
+#CONTENT li {padding: 5px 0; list-style-type: none; margin: 0 -20px 0 -20px;}
 #CONTENT h2, #CONTENT h4, #CONTENT p {
 padding:6px 20px 6px 20px;
 font-size:15px;

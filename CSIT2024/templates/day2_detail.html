@@ -1,47 +1,36 @@
-<!DOCTYPE html>
-<html lang="zh-Hant">
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='day2_detail.css') }}">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='day2_detail.css') }}">
-</head>
+{% for forum in forums %}
+    <div class="header">
+        <h3>{{ forum.title }}</h3>
+        <p><strong>{{ forum.subtitle }}</strong></p>
+        <p>主持人：{{ forum.hosts }}</p>
+        <p>時間：{{ forum.time }}</p>
+        <p>地點：{{ forum.location }}</p>
+    </div>
 
-<body>
-    {% for forum in forums %}
-        <div class="header" >
-            <h3>{{ forum.title }}</h3>
-            <p><strong>{{ forum.subtitle }}</strong></p>
-            <p>主持人：{{ forum.hosts }}</p>
-            <p>時間：{{ forum.time }}</p>
-            <p>地點：{{ forum.location }}</p>
-        </div>
-
-        <table>
-            <colgroup>
-                <col>
-                <col>
-                <col>
-            </colgroup>
-            <thead>
-                <tr>
-                    <th bgcolor="{{ forum.titlecolor }}">論文編號</th>
-                    <th bgcolor="{{ forum.titlecolor }}">篇名</th>
-                    <th bgcolor="{{ forum.titlecolor }}">技術團隊</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for paper in forum.papers %}
-                <tr>
-                    <td bgcolor="{{ forum.titlecolor }}">{{ paper.id }}</td>
-                    <td>{{ paper.title }}</td>
-                    <td>{{ paper.author }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-        <br>
-    {% endfor %}
-</body>
-
-</html>
+    <table>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th bgcolor="{{ forum.titlecolor }}">論文編號</th>
+                <th bgcolor="{{ forum.titlecolor }}">篇名</th>
+                <th bgcolor="{{ forum.titlecolor }}">技術團隊</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for paper in forum.papers %}
+            <tr>
+                <td bgcolor="{{ forum.titlecolor }}">{{ paper.id }}</td>
+                <td>{{ paper.title }}</td>
+                <td>{{ paper.author }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+{% endfor %}
