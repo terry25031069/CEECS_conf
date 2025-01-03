@@ -1,11 +1,11 @@
-@import url(//fonts.googleapis.com/earlyaccess/cwtexkai.css);
-
-/*font-family: 'cwTeXHei', sans-serif;*/
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexkai.css);
+body{
+  font-family: ‘cwTeXKai’, serif !important;
+}
 * {margin:0; padding:0;}
 li {list-style-type: none}
 a {text-decoration: none}
 body,html{width: 100%}
-body {font-family: '微軟正黑體',Arial,'cwtexkai', sans-serif;}
 
 /*---- 最外層包裝 ----*/
 #WRAPPER {
