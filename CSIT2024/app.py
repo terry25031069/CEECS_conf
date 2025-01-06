@@ -23,9 +23,9 @@ def agenda():
             "events": [
                 {"time": "09:00~09:30", "description": ["教研大樓 TR A203  開幕式  貴賓介紹及貴賓致詞"], "colspan": 4, "type": "0"},
                 {"time": "09:30~09:45", "description": ["貴賓合影"], "colspan": 4, "type": "0"},
-                {"time": "09:45~10:45", "description": ["【專題演講I】演講者：卢苇教授/北京交通大學  【專題演講II】演講者：施國琛教授/中央大學"], "colspan": 4, "type": "1"},
+                {"time": "09:45~10:45", "description": ["【專題演講I】演講者：卢苇教授/北京交通大学  【專題演講II】演講者：施國琛教授/中央大學"], "colspan": 4, "type": "1"},
                 {"time": "10:45~11:00", "description": ["休息/交流時間"], "colspan": 4, "type": "1"},
-                {"time": "11:00~12:00", "description": ["【專題演講III】演講者：方鹏飞副教授/東南大學  【專題演講IV】演講者：陳正一教授/中央大學"], "colspan": 4, "type": "1"},
+                {"time": "11:00~12:00", "description": ["【專題演講III】演講者：吴小俊教授/江南大学  【專題演講IV】演講者：陳正一教授/中央大學"], "colspan": 4, "type": "1"},
                 {"time": "12:00~14:00", "description": ["午餐"], "colspan": 4, "type": "0"},
                 {"time": "14:00~15:30", "description": ["【分組論壇一】  網路計算與電子分論壇  (Network Computing and Electronics)(I)  電機 E1-233 會議室", "【分組論壇二】  人工智能分論壇  (Artificial Intelligence) (I)  電機 E1-225 會議室", "【分組論壇三】  永續應用分論壇  (Sustainable Applications)  (I)  通訊 E1-211 會議室"], "colspan": 1, "type": "1"},
                 {"time": "15:30~16:00", "description": ["休息/交流時間"], "colspan": 4, "type": "0"},
@@ -231,4 +231,4 @@ def program():
     return render_template('program.html')
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", debug=True, port=3333)
+    app.run(host="0.0.0.0", debug=False, port=3333)
